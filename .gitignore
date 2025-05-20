@@ -1,52 +1,56 @@
-# Prerequisites
-*.d
-
-# Object files
+memory-bank
+#########################################
+# Build output
+#########################################
 *.o
-*.ko
-*.obj
+*.d
 *.elf
-
-# Linker output
-*.ilk
 *.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
+*.bin
 *.hex
+*.out
+*.list
+*.lss
+*.dis
+build.ninja
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+#########################################
+# CMake artifacts
+#########################################
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+#########################################
+# STM32CubeIDE (incl. VS Code extension)
+#########################################
+*.launch
+*.log
+*.mxproject
+*.cproject
+*.project
+.settings/
+.build/
+Debug/
+Release/
+STM32CubeIDE/
+.gdb*
+
+#########################################
+# VS Code
+#########################################
+.vscode/
+*.code-workspace
+
+#########################################
+# Misc / Editors / OS
+#########################################
+*.swp
+*~
+*.bak
+*.tmp
+.DS_Store
+Thumbs.db
+
